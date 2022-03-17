@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="20.413">
+    <testcase classname="Search Item" name="Search for item and verify results text" time="9.257">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given User is on google HomePage............................................passed
+Given i want to search for "iphone".........................................passed
+And results text is displayed with "About"..................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDef.googleStefDef.results_text_is_displayed_with(googleStefDef.java:27)
+	at ✽.results text is displayed with "About"(file:///Users/techcircle/eclipse-workspace/Batch8-eclipseWorkspace/CucumberSalad_Batch9/src/test/resources/features/google.feature:12)
+]]></failure>
+    </testcase>
+    <testcase classname="Search Item" name="Title of your scenario outline" time="4.873">
+        <system-out><![CDATA[Given User is on google HomePage............................................passed
+Given i want to search for "iphone".........................................passed
+And results item consist of "iphone"........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search Item" name="Title of your scenario outline 2" time="2.787">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given User is on google HomePage............................................passed
+Given i want to search for "macbook pro"....................................passed
+And results item consist of "macbook".......................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDef.googleStefDef.results_item_consist_of(googleStefDef.java:35)
+	at ✽.results item consist of "macbook"(file:///Users/techcircle/eclipse-workspace/Batch8-eclipseWorkspace/CucumberSalad_Batch9/src/test/resources/features/google.feature:20)
+]]></failure>
+    </testcase>
+    <testcase classname="Search Item" name="Title of your scenario outline 3" time="3.147">
+        <system-out><![CDATA[Given User is on google HomePage............................................passed
+Given i want to search for "samsung"........................................passed
+And results item consist of "samsung".......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
