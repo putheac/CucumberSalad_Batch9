@@ -35,7 +35,6 @@ public class googleStefDef extends commonMethods {
 			Assert.assertTrue(containText);
 		}
 		
-		
 	}
 
 }
