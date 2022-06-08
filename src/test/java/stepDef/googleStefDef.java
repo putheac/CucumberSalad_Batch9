@@ -33,6 +33,10 @@ public class googleStefDef extends commonMethods {
 		for (WebElement eachItem : grp.listOfItems) {
 			Boolean containText = eachItem.getText().toLowerCase().contains(string);
 			Assert.assertTrue(containText);
+			
+			
+			
+			
 		}
 		
 	}
