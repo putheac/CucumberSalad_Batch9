@@ -18,6 +18,5 @@ public class googleHomePage {
 	public WebElement searchInputBox;
 	
 	
-	
 
 }
